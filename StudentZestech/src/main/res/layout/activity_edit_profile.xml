@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".EditProfileActivity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/back"
+        android:fontFamily="monospace"
+        android:text="Account Info"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <!-- name  -->
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+       android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+        android:id="@+id/box1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/name"
+            android:text="Name"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:drawablePadding="10dp"
+            android:paddingVertical="3dp"
+            android:drawableLeft="@drawable/ic_boy1"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewround"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:textColor="#000"
+             />
+        <!--  class -->
+        <TextView
+            android:labelFor="@+id/std"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:text="Class"
+            android:textStyle="bold"/>
+        <TextView
+            android:drawableRight="@drawable/ic_editprofile"
+            android:paddingVertical="3dp"
+            android:drawableLeft="@drawable/ic_class1"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/std"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewround"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            
+            />
+        <!-- role-->
+ <!--       <TextView
+            android:visibility="invisible"
+            android:labelFor="@+id/stdrole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:text="Role"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:visibility="invisible"
+            android:id="@+id/stdrole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:visibility="invisible"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <RadioButton
+            android:visibility="invisible"
+            android:id="@+id/rolecore"
+            android:layout_marginLeft="20dp"
+            android:text="CORE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            <RadioButton
+                android:visibility="invisible"
+                android:id="@+id/rolecouncil"
+                android:layout_marginLeft="20dp"
+                android:text="COUNCIL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RadioGroup> -->
+
+        <!--  gr no -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:labelFor="@+id/grno"
+            android:text="Gr No."
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingVertical="3dp"
+            android:drawableLeft="@drawable/ic_grno"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/grno"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewround"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:inputType="number"
+
+            />
+        <!--  roll no -->
+        <TextView
+            android:labelFor="@+id/rollno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:text="Roll No."
+            android:textStyle="bold"/>
+        <TextView
+            android:maxLength="4"
+            android:paddingVertical="3dp"
+            android:drawableLeft="@drawable/ic_rollno"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/rollno"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:drawableRight="@drawable/ic_editprofile"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewround"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:inputType="number"
+
+            />
+        <!-- phone  -->
+        <TextView
+            android:labelFor="@+id/phoneno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:text="phone no."
+            android:textStyle="bold"/>
+        <TextView
+            android:maxLength="10"
+            android:paddingVertical="3dp"
+            android:drawableLeft="@drawable/ic_phone1"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/phoneno"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:drawableRight="@drawable/ic_editprofile"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewround"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:inputType="number"
+
+            />
+        <!-- dob  -->
+        <TextView
+
+            android:labelFor="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:text="date of birth"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingVertical="3dp"
+            android:drawableLeft="@drawable/ic_dob1"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/dob"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewround"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+
+            />
+        <!-- Role -->
+        <TextView
+            android:labelFor="@+id/stdrole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:text="Role"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingVertical="3dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/stdrole"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:drawableRight="@drawable/ic_editprofile"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewround"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/setstd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#2b2d5d"
+    tools:context=".AboutActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:id="@+id/text_view_about"
+        android:text="Zestech"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="If any Bug or Suggestion is there please write here and send to developer by clicking the button below"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/msgtodev"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:background="@drawable/edittext_round"
+            android:textColor="#fff"
+            android:textColorHint="#9eee"
+            android:hint="Enter here Bug or report"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+    <Button
+        android:background="@drawable/green_button"
+        android:layout_margin="20dp"
+        android:id="@+id/mailtome"
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#efe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom"
+            android:text="Please Select Gmail to send" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ball"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

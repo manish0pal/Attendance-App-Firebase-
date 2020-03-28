@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/msglist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="4dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textviewstd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2b2d4d"
+            android:gravity="center"
+            android:text="Messages"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:textStyle="normal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/blue_btn_msg"
+            android:textColor="#fff"
+            android:id="@+id/adminbtn"
+            android:layout_marginLeft="30dp"
+            android:text="ADMIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <Button
+                android:textColor="#000"
+                android:padding="10dp"
+                android:background="@drawable/button_round"
+                android:text="Department"
+                android:id="@+id/departmentbtn"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            app:stackFromEnd="true"
+            app:layoutManager="LinearLayoutManager"
+            android:layout_gravity="right"
+            android:id="@+id/adminmsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
