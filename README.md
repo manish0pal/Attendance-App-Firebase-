@@ -22,6 +22,18 @@ Things that admin can do
 
 # Zestech (Student app)
 
+The student will be registered with a separate username and password to make student attendance. Students can view Up Coming Events, Meetings And also Message from Admin for any Query. They can also see the attendance of the student’s that had attended
+
+When Admin Genrate QR-code then student have to scan the Qr-code to mark thier attendance 
+
+Things that Student can do
+1) Scan Qr-code
+2) Edit Profile
+3) See Message from Admin
+4) See Meeting Records and  conclusion of it.
+5) Send feedback to developer
+6) See its own attendance
+
 ![](ScreenShot/StudentApp1.jpg)
 
 ![](ScreenShot/StudentApp2.jpg)
