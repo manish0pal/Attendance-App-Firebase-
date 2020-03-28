@@ -15,5 +15,13 @@ Things that admin can do
 5) Download the Excel file of each meeting
 6) See individual meeting list 
 
-![](ScreenShot/Adminapp1.jpg)
+![](ScreenShot/AdminApp1.jpg)
 
+![](ScreenShot/AdminApp2.jpg)
+
+
+# Zestech (Student app)
+
+![](ScreenShot/StudentApp1.jpg)
+
+![](ScreenShot/StudentApp2.jpg)
