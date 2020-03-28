@@ -1,4 +1,6 @@
-# Admin-Zestech with Firebase database
+# Attendance-App with Firebase database
+there is 2 app one for Admin( Admin-Zestech) and another for student (Zestech)
+# Admin-Zestech 
 Admin Application of Attendance App name Zestech
 
 Admin app  generates the QR Code by entering the meeting details and Students use the second application for giving the attendance by Scanning the QR Code.
