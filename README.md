@@ -15,5 +15,5 @@ Things that admin can do
 5) Download the Excel file of each meeting
 6) See individual meeting list 
 
-1[](Admin App/Admin1.jpg)
+![](ScreenShot/Adminapp1.jpg)
 
