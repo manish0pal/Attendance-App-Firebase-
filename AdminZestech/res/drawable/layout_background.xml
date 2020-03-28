@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="50dp">
+        <shape>
+            <solid android:color="@color/logincolor" />
+        </shape>
+    </item>
+    <item android:top="-500dp" android:bottom="25dp" android:left="-200dp" >
+        <shape>
+            <corners android:radius="250dp" />
+            <solid android:color="@color/logincolor" />
+        </shape>
+    </item>
+</layer-list>

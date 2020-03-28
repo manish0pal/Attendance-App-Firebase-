@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/logincolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logowelcome"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logowelcome"
+        android:text="Welcome to Admin Zestech"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

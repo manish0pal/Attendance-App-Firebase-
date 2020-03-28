@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4285F6"
+    tools:context=".MeetingList1.MeetingActivity">
+
+<TextView
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:id="@+id/meetinglisttext"
+    android:text="Meeting List"
+    android:textSize="20dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="40sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleviewer"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/meetinglisttext"
+         />
+    <RelativeLayout
+        android:layout_margin="50dp"
+        android:id="@+id/nodataavailable"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>

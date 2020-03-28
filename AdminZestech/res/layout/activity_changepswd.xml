@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/logincolor"
+    tools:context=".ChangepswdActivity">
+        <LinearLayout
+        android:layout_marginHorizontal="20dp"
+        android:padding="20dp"
+        android:background="@drawable/button_bg_round"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:labelFor="@+id/pwd1"
+            android:text="Current Password"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                app:passwordToggleEnabled="true"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/pwd1"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+<!--
+        <EditText
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:inputType="textPassword"
+            android:id="@+id/pwd1"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:labelFor="@+id/pwd2"
+                android:text="New Password" />
+<!--
+        <EditText
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="textPassword"
+            android:id="@+id/pwd2"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/pwd2"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--
+            <CheckBox
+            android:layout_marginHorizontal="40dp"
+            android:layout_gravity="right"
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SHOW PASSWORD" />
+--> <TextView
+            android:labelFor="@+id/pwd3"
+            android:text="Confirm Password"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/pwd3"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--
+        <EditText
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="textPassword"
+            android:id="@+id/pwd3"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+-->
+<Button
+    android:id="@+id/changepwd"
+    android:background="@drawable/green_button"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Submit">
+</Button>
+
+
+    </LinearLayout>
+</RelativeLayout>

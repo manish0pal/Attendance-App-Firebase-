@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".StudentRecords.RecordActivity">
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/hidewhennotsearch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+
+        <EditText
+            android:id="@+id/nametosrch"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="50dp"
+            android:hint="search"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/canclebtn"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_cancel_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="50dp"
+        android:id="@+id/nodataavailable"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/hidewhensearch"
+        android:gravity="center_horizontal"
+        android:background="@color/logincolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txttost"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Student Records"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+<ImageButton
+    android:id="@+id/seacrhstd"
+    android:layout_marginRight="5dp"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/ic_search"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/></RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleviewer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp" />
+
+
+</RelativeLayout>

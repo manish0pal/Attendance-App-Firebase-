@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AdminZestech</string>
+    <string name="clicked_item">Clicked item : %1$s</string>
+    <string name="long_clicked_item">Long clicked item : %1$s</string>
+    <string name="rename_album">RENAME ALBUM</string>
+    <string name="delete_item">DELETE ITEM</string>
+    <string name="cant_be_empty">Can\'t be empty</string>
+    <string name="Username">manish</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <array name="myImages">
+        <item>@drawable/no1</item>
+        <item>@drawable/no2</item>
+        <item>@drawable/no3</item>
+        <item>@drawable/no4</item>
+    </array>
+</resources>

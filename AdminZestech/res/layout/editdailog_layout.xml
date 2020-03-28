@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_margin="10dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/conclusionpic" />
+
+        <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textView1"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enter the Conclusion"
+       />
+
+    <EditText
+        android:id="@+id/conclusion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Please Enter "
+        />
+<LinearLayout
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:background="@drawable/grey_button"
+        android:id="@+id/canclebtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp"
+        android:text="Cancel"
+        />
+    <Button
+        android:background="@drawable/green_button"
+        android:id="@+id/submitbtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:text="Submit" />
+
+</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

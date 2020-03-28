@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootrelative"
+    android:background="@drawable/stdback1"
+    tools:context=".MeetingList1.StudentMarkedActivity">
+    <RelativeLayout
+        android:layout_margin="50dp"
+        android:id="@+id/nodataavailable"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleviewer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="-1dp" />
+    </RelativeLayout>
+        <TextView
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:id="@+id/timingofmeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+   <!-- <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pullToRefresh">
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>  -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_file_download_black_24dp"
+        android:id="@+id/downloadmeetingdata"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+</RelativeLayout>

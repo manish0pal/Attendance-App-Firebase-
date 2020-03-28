@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="colorPrimary">#111</color>
+    <color name="colorPrimaryDark">#285FBA</color>
+    <color name="colorAccent">#36D3CE</color>
+    <color name="logincolor">#285FBA</color>
+    <color name="gifcolor">#fff</color>
+    <color name="colorsInactive">#437EF7</color>
+
+
+</resources>
